@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+    <div id="map" class="map"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var map = new ol.Map({
+        target: 'map',
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([8.5208324, 47.360127]),
+          zoom: 10,
+        }),
+      })
+
+      
+      fetch("api.php")
+        .then((response) => response.json())
+        .then((data) =>
+          data.forEach((location) => {
+            const layer = new ol.layer.Vector({
+              source: new ol.source.Vector({
+                features: [
+                  new ol.Feature({
+                    geometry: new ol.geom.Point(ol.proj.fromLonLat([location['LONG'], location['LAT']])),
+                  }),
+                ],
+              }),
+            })
+            map.addLayer(layer)
+          })
+        )
+        </script>

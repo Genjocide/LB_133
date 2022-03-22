@@ -1,0 +1,98 @@
+nav{
+    font-size: x-large;
+}
+body{
+    background-color: rgba(217, 247, 85, 0.9);
+}
+#main-container{
+    padding: 2.5rem;
+    background-color: rgba(250, 112, 49, 0.8);
+    min-height: 1200px;
+}
+#main-container h1{
+    color: rgba(46, 132, 236, 0.8);;
+}
+#main-container h2{
+    color: rgba(50, 133, 235, 0.8);;
+}
+.nav-link{
+ margin-left: 1rem;
+}
+#form-container{
+    color: whitesmoke;
+    border-radius: 1%;
+    background-color: rgba(51, 134, 235, 0.8);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+#form-container h2{
+    color: white;
+}
+.row{
+    margin-top: 0.5rem;
+}
+#btn-show-student{
+    color: greenyellow;
+    margin-bottom: 0.6rem;
+    width: 200px;
+}
+#btn-show-user{
+    color: #0d6efd;
+    margin-bottom: 0.6rem;
+    width: 200px;
+}
+#btn-show-dashboard{
+    color: yellow;
+    width: 200px;
+    margin-bottom: 0.6rem;
+}
+#btn-update-profile{
+    width: 200px;
+    margin-bottom: 0.6rem;
+}
+#logout{
+    margin-top: 0.5rem;
+}
+table{
+    background-color: rgba(34, 129, 161, 0.8);
+    border: solid 2px rgba(54, 137, 238, 0.8);
+}
+th{
+    background-color: rgba(40, 27, 163, 0.8);
+    padding: 0.5rem;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td{
+    padding: 0.5rem;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+#footer{
+    color: rgb(44, 161, 240);
+    padding-top: 1rem;
+}
+#footer-container{
+    background-color: red;
+}
+h1{
+    color:black;
+}
+.error{
+    color: red;
+}
+
+/* streetmap css */
+.map{
+    height: 400px;
+    width: 100%;
+    border: solid 1px;
+}
+div{
+    background-color: blue transparent;
+    color: #fff;
+}
+.headimg{
+    object-fit: cover;
+    width: 100%;
+}
